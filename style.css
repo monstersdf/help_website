@@ -390,6 +390,7 @@ a {
     }
     body{
         overflow-x: hidden;
+        height: 500rem;
     }
     .responsive-logo{
         display: inline-flex;
@@ -401,5 +402,34 @@ a {
     }
     .text{
         margin-left: 0.2rem;
+    }
+    .grid-footer{
+        background: var(--secondary);
+    color: var(--primary);
+    height: max-content;
+    justify-content: flex-start;
+    font-size: 1rem;
+    line-height: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    position: relative;
+    }
+    .grid-copywrite-sec{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+    }
+    .grid-footer-3{
+       height: 22rem;
+    }
+    .grid-footer-style{
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: center; */
+        margin: 1rem 1rem;
     }
 }
