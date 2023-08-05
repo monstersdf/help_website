@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fff;
+    --secondary: #000000;
+    --tertiary: #dadbf1;
+    --btnColor: #4C5FD5;
+}
+
+body {
+    /* overflow: hidden; */
+    color: var(--secondary);
+    font-size: 16px;
+    font-family: 'GT America Standard', sans-serif;
+}
+
+header {
+    background: var(--secondary);
+    height: 5.5rem;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.responsive-logo {
+    color: var(--primary);
+    display: none;
+}
+.responsive-logo i{
+    font-size: 1.4rem;
+}
+.left-sec {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    color: var(--primary);
+}
+
+.left-sec .logo {
+    /* font-size: 2em; */
+    width: 10%;
+}
+
+.logo svg {
+    width: 8rem;
+}
+
+.text {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.text .abstract {
+    font-size: 1.4rem;
+    padding: 0 0.4em;
+    padding-left: 0.1em;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    font-family: 'GT America Standard', sans-serif;
+}
+
+.abstract:hover,
+i:hover {
+    opacity: 0.8;
+}
+
+.text .help {
+    font-weight: 400;
+    font-size: 1.45rem;
+    border-left: 2px solid var(--primary);
+    line-height: 29px;
+    padding: 0 0.5em;
+    /* height: 2px; */
+    margin-left: 0.2rem;
+
+}
+
+.text .help:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.right-sec {
+    align-items: center;
+    margin: 0rem 2rem;
+    display: flex;
+transition: 0.3s ease-in;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 0 0 0 1em;
+    cursor: pointer;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--primary);
+
+    padding: 0.5em 1.4rem;
+    border-radius: 8px;
+}
+
+.submit {
+    font-size: 1.47rem;
+    border: 1px solid;
+    background-color: #191a1b;
+    border-color: var(--primary);
+    position: relative;
+    z-index: 1000;
+    height: 50px;
+}
+
+.signin {
+    background: #4C5FD5;
+    color: #fff;
+    border: 1px solid #4C5FD5 !important;
+    border-color: #4C5FD5;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+}
+
+.signin:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/* hero section css  */
+
+.help-section {
+    background: #dadbf1;
+    height: 200px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help-main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.help-text {
+    font-size: 5rem;
+    color: var(--secondary);
+    margin: 0 0 2rem 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 23vh;
+    right: 44vh;
+    width: 2%;
+    z-index: 100;
+
+}
+
+input {
+    width: 45rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    /* font-weight:bold; */
+    padding: 1rem 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+    /* opacity: 0.6; */
+}
+
+input:hover {
+    border-color: #4C5FD5 !important;
+}
+
+/* grid section css  */
+.container-grid {
+    color: var(--secondary);
+    margin-top: 10rem;
+}
+
+.grid-contents-section {
+    width: 80%;
+    display: flex;
+    margin: 5em auto;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.grid-flex {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* padding: 0 2rem; */
+    height: auto;
+    margin-right: 3rem;
+}
+
+.grid-image {
+    margin-top: 30px;
+}
+
+.grid-image img {
+    max-height: 84px;
+    margin-right: 30px;
+
+}
+
+.grid-heading {
+    font-size: 1.5rem;
+    color: #191a1b;
+    margin: 1em auto;
+    font-weight: 700;
+}
+
+.grid-para {
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #191a1b;
+    margin-bottom: 1.8rem;
+}
+
+.grid-link {
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #4C5FD5;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.grid-link:hover {
+    border-bottom: 2px solid #4C5FD5;
+}
+
+.grid-text {
+    width: 100%;
+}
+
+/* footer css  */
+.grid-footer {
+    background: var(--secondary);
+    color: var(--primary);
+    height: 342px;
+    position: relative;
+    padding: 1.5rem 5rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.grid-footer-style {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content:center; */
+    margin: 2rem 0.2rem;
+}
+
+.grid-footer-style h2 {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin-bottom: 1rem;
+}
+
+.grid-footer-style a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.grid-footer-style a:hover {
+    text-decoration: underline #fff;
+}
+
+.grid-footer-style h2,
+a {
+    /* width: 100%; */
+}
+
+#bottom-space {
+    margin-bottom: 1.8rem;
+}
+
+.grid-copywrite-sec {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 4.9rem 7rem;
+}
+
+.grid-copywrite-sec svg {
+    width: 8rem;
+    margin-bottom: 0.8rem;
+}
+
+.grid-copywrite-sec p {
+    font-size: 1.25rem;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+/* media quries  */
+
+
+/* header section  */
+/* grid-section  */
+
+@media (max-width: 768px) {
+    .container-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 1rem;
+    }
+    /* .wrapper .left-sec{
+        margin: 0;
+    } */
+    .right-sec{
+       display: none;   
+    }
+
+    .active{
+        display: block;
+    
+    }
+
+    .help-text p{
+        font-size: 2rem;
+        line-height: 40px;
+        margin-bottom: 3.2rem;
+        letter-spacing: -3px;
+    }
+    .grid-contents-section {
+        display: block;
+        width: 100%;
+        margin: 0.5rem auto !important;
+    }
+    
+    .grid-flex {
+        width: 100%;
+        padding: 0.4em;
+    }
+
+    .grid-image img {
+        max-height: 59px;
+        margin: 0 1.3em;
+    }
+    input{
+        width: 100%;
+    }
+    .arrow{
+    position: absolute;
+    top: 23vh;
+    right: 44vh;
+    width: 2%;
+    z-index: 100;
+    }
+    .left-sec{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem auto;
+        width: 100%;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .responsive-logo{
+        display: inline-flex;
+        position: relative;
+        right: 3rem;
+    }
+    .responsive-logo p{
+        padding: 0.5rem;
+    }
+    .text{
+        margin-left: 0.2rem;
+    }
+}
