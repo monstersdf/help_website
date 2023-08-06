@@ -31,13 +31,16 @@ header {
     width: 90%;
     margin: auto;
 }
+
 .responsive-logo {
     color: var(--primary);
     display: none;
 }
-.responsive-logo i{
+
+.responsive-logo i {
     font-size: 1.4rem;
 }
+
 .left-sec {
     display: flex;
     align-items: center;
@@ -97,7 +100,7 @@ i:hover {
     align-items: center;
     margin: 0rem 2rem;
     display: flex;
-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .nav-list {
@@ -335,30 +338,71 @@ a {
         width: 100%;
         margin-right: 1rem;
     }
+
     /* .wrapper .left-sec{
         margin: 0;
     } */
-    .right-sec{
-       display: none;   
+    .right-sec {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
     }
 
-    .active{
-        display: block;
-    
+    .active .right-sec {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: visible;
+        transition: 0.3s ease-in;
+        position: absolute;
+        background: #191a1b;
+        min-height: 27vh;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        top: 5rem;
+        z-index: 990;
     }
 
-    .help-text p{
+    .active .submit {
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255,.5) !important;
+        border-radius: 0;
+        width: 50%;
+        
+    }
+
+    .active .signin {
+        padding: 1rem;
+        border: none !important;
+        background: inherit;
+    }
+
+    .active .nav-list {
+        padding-left: 4rem;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .help-text p {
         font-size: 2rem;
         line-height: 40px;
         margin-bottom: 3.2rem;
         letter-spacing: -3px;
     }
+
     .grid-contents-section {
         display: block;
         width: 100%;
         margin: 0.5rem auto !important;
     }
-    
+
     .grid-flex {
         width: 100%;
         padding: 0.4em;
@@ -366,64 +410,75 @@ a {
 
     .grid-image img {
         max-height: 59px;
-        margin: 0 1.3em;
+        margin: 0 1rem;
     }
-    input{
+
+    input {
         width: 100%;
     }
-    .arrow{
-    position: absolute;
-    top: 23vh;
-    right: 44vh;
-    width: 2%;
-    z-index: 100;
+
+    .arrow {
+        position: absolute;
+        top: 23vh;
+        right: 44vh;
+        width: 2%;
+        z-index: 100;
     }
-    .left-sec{
+
+    .left-sec {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin: 2rem auto;
         width: 100%;
     }
+
     html{
         overflow-x: hidden;
     }
     body{
         overflow-x: hidden;
     }
-    .responsive-logo{
-        display: inline-flex;
-        position: relative;
-        right: 3rem;
+    .responsive-logo {
+        display: flex;
+        position: absolute;
+        right: 0;
+        align-items: center;
     }
-    .responsive-logo p{
+
+    .responsive-logo p {
         padding: 0.5rem;
     }
-    .text{
+
+    .text {
         margin-left: 0.2rem;
     }
-    .grid-footer{
+
+    .grid-footer {
         background: var(--secondary);
-    color: var(--primary);
-    height: max-content;
-    justify-content: flex-start;
-    font-size: 1rem;
-    line-height: 28px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    position: relative;
+        color: var(--primary);
+        height: max-content;
+        justify-content: flex-start;
+        font-size: 1rem;
+        line-height: 28px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        position: relative;
     }
-    .grid-copywrite-sec{
+
+    .grid-copywrite-sec {
         position: absolute;
         left: 0;
         bottom: 0;
         padding: 0;
     }
-    .grid-footer-3{
-       height: 22rem;
+
+    .grid-footer-3 {
+        height: 22rem;
     }
-    .grid-footer-style{
+
+    .grid-footer-style {
         width: 15%;
         display: flex;
         flex-direction: column;
